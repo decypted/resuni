@@ -6,8 +6,7 @@ import UploadButton from "./UploadButton"
 import { trpc } from "@/app/_trpc/client"
 import { useState } from 'react';
 import { Ghost } from "lucide-react";
-import { Loading } from "@nextui-org/react";
-import Skeleton from "react-loading-skeleton";
+
 
 const Dashboard = () => {
     const {data: files} = trpc.getUserFiles.useQuery()
@@ -37,11 +36,11 @@ const Dashboard = () => {
                     ))}
                 </ul>
             ) : isLoading ? (
-                <Loading>Loading</Loading>
+               <div></div>
             ) : (
                 <div className="mt-16 flex flex-col items-center gap-2">
                     <Ghost className="h-15 w-15 text-slate-900"/>
-                    <h3 className="font-semibold">It&apos;s empty here, let's start by uploading a resume!</h3>
+                    <h3 className="font-semibold">It&apos;s here, let&apos;s start by uploading a resume!</h3>
                     <p>Only PDF file types are supported.</p>
                 </div>
             )}
