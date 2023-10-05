@@ -17,7 +17,7 @@ const UploadButton = () => {
                   <ModalHeader className="flex flex-col gap-1">Upload Your Resume</ModalHeader>
                   <ModalBody>
                     <p> 
-                      Getting started is easy, Simply upload your resume and we'll handle the rest.
+                      Getting started is easy, Simply upload your resume and we&apos;ll handle the rest.
                     </p>
                     <p>
                       <span className=""></span>

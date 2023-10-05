@@ -15,7 +15,7 @@ export default function Hero (){
      </div>
      <h1 className="max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl">Chat with your <span className='text-blue-600'>resumes</span> in seconds!</h1>
      <p className="mt-5 max-w-prose text-zinc sm:text-xl">
-      ResumeAi gives you the ability to chat with your Resume, simply upload your resume and ask questions on how to improve it! With dozens of ways to get feedbacks on your resume, Let's get you hired. Terms & Condition apply. Starting plans <span className="font-bold">$5/mo or $55/yr</span>
+      ResumeAi gives you the ability to chat with your Resume, simply upload your resume and ask questions on how to improve it! With dozens of ways to get feedbacks on your resume, Let&apos;s get you hired. Terms & Condition apply. Starting plans <span className="font-bold">$5/mo or $55/yr</span>
       </p>
     <div className="mt-5">
     <Link href='/dashboard' target='_blank' className='flex text-white p-5 z-50'>
