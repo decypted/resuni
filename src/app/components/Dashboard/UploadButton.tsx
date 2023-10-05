@@ -2,6 +2,7 @@
 
 import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure} from "@nextui-org/react";
 import {useState} from "react"
+import Link from "next/link";
 
 const UploadButton = () => {
     const {isOpen, onOpen, onOpenChange} = useDisclosure();
@@ -13,25 +14,18 @@ const UploadButton = () => {
             <ModalContent>
               {(onClose) => (
                 <>
-                  <ModalHeader className="flex flex-col gap-1">Modal Title</ModalHeader>
+                  <ModalHeader className="flex flex-col gap-1">Upload Your Resume</ModalHeader>
                   <ModalBody>
                     <p> 
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nullam pulvinar risus non risus hendrerit venenatis.
-                      Pellentesque sit amet hendrerit risus, sed porttitor quam.
+                      Getting started is easy, Simply upload your resume and we'll handle the rest.
                     </p>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nullam pulvinar risus non risus hendrerit venenatis.
-                      Pellentesque sit amet hendrerit risus, sed porttitor quam.
+                      <span className=""></span>
                     </p>
-                    <p>
-                      Magna exercitation reprehenderit magna aute tempor cupidatat consequat elit
-                      dolor adipisicing. Mollit dolor eiusmod sunt ex incididunt cillum quis. 
-                      Velit duis sit officia eiusmod Lorem aliqua enim laboris do dolor eiusmod. 
-                      Et mollit incididunt nisi consectetur esse laborum eiusmod pariatur 
-                      proident Lorem eiusmod et. Culpa deserunt nostrud ad veniam.
-                    </p>
+                    <p >
+                     <span className=" text-red-500">Disclaimer: </span> Please read & adhere to our <Link href="/">Terms Of Service</Link> and <Link href="/">Acceptable Use Policy</Link> or your account may be subjected to <span className="font-bold">Termination</span> in accordance with our <Link href="/">Abuse & Safety Policy
+                     </Link> 
+                     </p>
                   </ModalBody>
                   <ModalFooter>
                     <Button color="danger" variant="light" onPress={onClose}>
